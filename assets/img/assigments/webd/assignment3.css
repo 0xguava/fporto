@@ -1,0 +1,86 @@
+body{
+  background-color: cornsilk;
+}
+
+.dd{
+  padding: 80px;
+  display: flex;
+  gap: 40px;
+
+}
+
+.btn{
+  text-align: center;
+  font-size: 28px;
+  padding: 60px;
+  height: 100px;
+  width: 400px;
+  background-color: dimgray;
+  color: whitesmoke;
+
+
+}
+
+.b1:hover{
+  border-width: 10px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      whitesmoke, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+.b2:hover{
+  font-family: "Rubik Scribble", system-ui;
+  transition: 0.7s;
+}
+
+.b3{
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.b3:hover{
+  background-color: green;
+  cursor: pointer;
+}
+
+.b4:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.b5{
+  /* background-image: url(sea-edge-79ab30e2.png); */
+  opacity: 100%;
+}
+
+.b5:hover{
+  opacity: 0;
+}
+
+.b6:hover{
+  font-size: 32px;
+}

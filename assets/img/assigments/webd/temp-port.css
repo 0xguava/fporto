@@ -1,0 +1,75 @@
+body {
+  font-family: "Lobster", sans-serif;
+  font-weight:50;
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 20px;
+    padding: 0;
+    /* height: 100vh; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.container {
+    height: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.quadrant {
+    /* width: 200px; */
+    /* height: "Lobster", sans-serif200px; */
+    color: #91aaff; 
+    border: 2px solid  #aa00ff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+  flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.quadrant:hover{
+  backdrop-filter: blur(20px);
+  transition: 1s;
+}
+
+.imag{
+  border: 0;
+  border-radius: 20px;
+}
+
+.quadrant1 {
+    width: 360px;
+    height: 350px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+
+.quadrant2 {
+    height: 350px;
+    grid-column: 2 / 77;
+    grid-row: 1 / 2;
+
+}
+
+.quadrant3 {
+    height: 500px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+}
+
+.quadrant4 {
+    height: 500px;
+    /* width: 1400px; */
+    
+    grid-column: 2 / 77;
+    grid-row: 2 / 100;
+}
+
