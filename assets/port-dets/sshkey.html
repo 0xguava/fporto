@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Adding SSH key</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Adding SSH key in Github Profile</h2>
+          <ol>
+            <li><a href="../../index.html">Home</a></li>
+            <li>Adding SSH key</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+ <h2>Linux</h2>
+    <ol>
+        <li>Open Terminal.</li>
+        <li>Check for existing SSH keys. If keys exists, skip next step and continue from step 4. In my case keys exists, but if your are doing it for first time the you will no see the last two line on can get an error:<code> ls -la ~/.ssh</code><br><img src="../img/ssh/2.jpg" alt=""></li>
+        <li>Generate a new SSH key. Press enter whenever it asks for something until you see your shell prompt again:<code> ssh-keygen -t rsa</code><br><img src="../img/ssh/3.jpg" alt=""></li>
+        <li>View newly generated ssh key:<code> cat .ssh/id_rsa.pub</code><br><img src="../img/ssh/4.jpg" alt=""></li>
+        <li>Simply, copy the SSH key to your clipboard. And go to your github account's profile.</li>
+        <li>Add the SSH key to your GitHub account:
+            <ol type="a">
+                <li>Click on your profile icon in the top right corner of GitHub, then click on "Settings".</li>
+                <li>In the left sidebar, click on "SSH and GPG keys".</li>
+                  <img src="../img/ssh/6.png" height="500px" alt="">
+                <li>Click on "New SSH key" or "Add SSH key".</li>
+                <li>Paste your SSH key into the "Key" field and add a descriptive title.</li>
+                <li>Click "Add SSH key".</li>
+            </ol>
+        </li>
+    </ol>
+    
+    <h2>Windows</h2>
+    <ol>
+        <li>Download and install Git for Windows from <a href="https://git-scm.com/download/win">git-scm.com</a>.</li>
+        <li>Open Git Bash from the Start menu.</li>
+        <li>Check for existing SSH keys(if keys exists, skip next step and continue from step 4):<br> <code>ls -al ~/.ssh</code></li>
+        <li>Generate a new SSH key:<br> <code>ssh-keygen -t rsa</code></li>
+        <li>View newly generated ssh key:<br> <code>cat .ssh/id_rsa.pub</code></li>
+        <li>Simply, copy the SSH key to your clipboard.</li>
+        <li>Add the SSH key to your GitHub account:
+            <ol type="a">
+                <li>Click on your profile icon in the top right corner of GitHub, then click on "Settings".</li>
+                <li>In the left sidebar, click on "SSH and GPG keys".</li>
+                <li>Click on "New SSH key" or "Add SSH key".</li>
+                <li>Paste your SSH key into the "Key" field and add a descriptive title.</li>
+                <li>Click "Add SSH key".</li>
+            </ol>
+        </li>
+    </ol>           
+            <div class="portfolio-description">
+            </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Aditya Vilas Dhengre</h3>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Aditya Vilas Dhengre</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
