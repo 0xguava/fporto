@@ -73,9 +73,8 @@
     <ol>
         <li>Download and install Git for Windows from <a href="https://git-scm.com/download/win">git-scm.com</a>.</li>
         <li>Open Git Bash from the Start menu.</li>
-        <li>Check for existing SSH keys(if keys exists, skip next step and continue from step 4):<br> <code>ls -al ~/.ssh</code></li>
-        <li>Generate a new SSH key:<br> <code>ssh-keygen -t rsa</code></li>
-        <li>View newly generated ssh key:<br> <code>cat .ssh/id_rsa.pub</code></li>
+              <li>Generate a new SSH key: <code>ssh-keygen -t rsa</code><br><img src="../img/ssh/3w.png" alt=""></li>
+        <li>View newly generated ssh key: <code>cat .ssh/id_rsa.pub</code><br><img src="../img/ssh/4w.png" alt=""></li>
         <li>Simply, copy the SSH key to your clipboard.</li>
         <li>Add the SSH key to your GitHub account:
             <ol type="a">
@@ -84,6 +83,7 @@
                 <li>Click on "New SSH key" or "Add SSH key".</li>
                 <li>Paste your SSH key into the "Key" field and add a descriptive title.</li>
                 <li>Click "Add SSH key".</li>
+                  <img src="../img/ssh/6.png" height="500px" alt="">
             </ol>
         </li>
     </ol>           
